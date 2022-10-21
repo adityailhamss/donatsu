@@ -55,7 +55,7 @@ function Navbar() {
             </li>
             <li className='py-6'>
                 <NavLink
-                    to={"/"}
+                    to={"/karir"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#878889" : "#1FB2FC",
@@ -116,7 +116,7 @@ function Navbar() {
             </li>
             <li className='py-6'>
                 <NavLink
-                    to={"/"}
+                    to={"/karir"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#878889" : "#1FB2FC",
