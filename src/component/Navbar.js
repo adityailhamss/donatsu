@@ -22,7 +22,7 @@ function Navbar() {
                     to={"/kemitraan"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -34,7 +34,7 @@ function Navbar() {
                     to={"/"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -46,7 +46,7 @@ function Navbar() {
                     to={"/"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -58,7 +58,7 @@ function Navbar() {
                     to={"/karir"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -85,7 +85,7 @@ function Navbar() {
                     to={"/kemitraan"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -97,7 +97,7 @@ function Navbar() {
                     to={"/"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -109,7 +109,7 @@ function Navbar() {
                     to={"/"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -121,7 +121,7 @@ function Navbar() {
                     to={"/karir"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
-                        color: isActive.isActive ? "#878889" : "#1FB2FC",
+                        color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
@@ -129,7 +129,7 @@ function Navbar() {
                 </NavLink>
             </li>
           </ul>            
-        <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
+        <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[150px] lg:w-[200px] h-[48px]'>
             <img src={Wa}/>
             <p className='font-normal text-base text-[#FFFFFF]'>HUBUNGI KAMI</p>
         </button>
