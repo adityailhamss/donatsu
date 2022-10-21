@@ -19,7 +19,7 @@ function Navbar() {
         <ul className='hidden lg:flex flex-row gap-14 items-start'>
             <li className='py-6'>
                 <NavLink
-                    to={"/"}
+                    to={"/kemitraan"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#878889" : "#1FB2FC",
@@ -80,7 +80,7 @@ function Navbar() {
             <ul className=''>
             <li className='py-6'>
                 <NavLink
-                    to={"/"}
+                    to={"/kemitraan"}
                     className="py-6 px-6 tracking-widest"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#878889" : "#1FB2FC",
