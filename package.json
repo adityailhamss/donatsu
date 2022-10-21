@@ -9,9 +9,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
+<<<<<<< HEAD
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
+=======
+    "react-scripts": "^5.0.1",
+>>>>>>> 8d35e6d83fe25740b29c7fe8fa407d12d15ef5bc
     "web-vitals": "^2.1.4"
   },
   "scripts": {
