@@ -65,11 +65,13 @@ function Navbar() {
                       Karir
                 </NavLink>
             </li>
-          </ul>            
-        <button className='flex-row hidden lg:flex justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
+          </ul>     
+          <a href="https://wa.me/6285722159221">  
+          <button className='flex-row hidden lg:flex justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
             <img src={Wa}/>
             <p className='font-normal text-base text-[#FFFFFF]'>HUBUNGI KAMI</p>
         </button>
+        </a>     
         <div className="ml-auto my-auto lg:hidden inline-block w-[2rem] relative hover:cursor-pointer">
           <img src={Menu} alt="" onClick={dropDown} />
           <div

@@ -1,5 +1,7 @@
 import React from 'react';
 import Gambar1 from "../assets/img/Ilustrasi.png";
+import Gambar2 from "../assets/img/keluarga.png";
+import Gambar3 from "../assets/img/sisteur.png";
 import Varian from "../assets/img/Varian.png";
 import Varian1 from "../assets/img/Varian1.png";
 import Varian2 from "../assets/img/Varian2.png";
@@ -12,31 +14,79 @@ import img1 from "../assets/img/img1.png";
 import img2 from "../assets/img/img2.png";
 import img3 from "../assets/img/img3.png";
 import img4 from "../assets/img/img4.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function LandingPage() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <div className=''>
+      <Slider {...settings}>
+        <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
+          <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
+            <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Ibu & Anak</h1>
+            <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
+          <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
+            <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
+              <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
+            </button>
+            <a href="https://wa.me/6285722159221">
+            <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
+              <p className='text-sm lg:text-lg font-normal text-[#1FB2FC]'>HUBUNGI KAMI</p>  
+            </button>
+            </a>
+          </div>
+        </div>
+        <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
+          <img src={Gambar1}/>
+        </div>
+      </div>
+      <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
+        <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
+          <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Keluarga</h1>
+          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
+        <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
+          <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
+            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
+          </button>
+          <a href="https://wa.me/6285722159221">
+          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
+            <p className='text-sm lg:text-lg font-normal text-[#1FB2FC]'>HUBUNGI KAMI</p>  
+          </button>
+          </a>
+        </div>
+      </div>
+      <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
+        <img src={Gambar2}/>
+      </div>
+    </div>
     <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
-    <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
-      <div className='px-2'>
-        <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Ibu & Anak</h1>
+        <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
+          <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Sisteur</h1>
+          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
+        <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
+          <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
+            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
+          </button>
+          <a href="https://wa.me/6285722159221">
+          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
+            <p className='text-sm lg:text-lg font-normal text-[#1FB2FC]'>HUBUNGI KAMI</p>  
+          </button>
+          </a>
+        </div>
       </div>
-      <div className='px-2'>
-        <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
-      </div>
-      <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
-        <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[240px] h-[52px]'>
-          <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
-        </button>
-        <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[240px] h-[52px]'>
-          <p className='text-sm lg:text-lg font-normal text-[#1FB2FC]'>HUBUNGI KAMI</p>  
-        </button>
+      <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
+        <img src={Gambar3}/>
       </div>
     </div>
-    <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
-    <img src={Gambar1}/>
-    </div>
-    </div>
+    </Slider>
 
     <div className='flex flex-col'>
     <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8'>
