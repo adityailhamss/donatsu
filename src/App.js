@@ -6,6 +6,7 @@ import LandingPage from './component/LandingPage';
 import Kemitraan from './component/Kemitraan';
 import Karir from './component/Karir';
 import TentangKami from './component/TentangKami';
+import Produk from './component/Produk';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path = "/kemitraan" element ={<Kemitraan/>}/>
         <Route path = "/karir" element ={<Karir/>}/>
         <Route path = "/tentangkami" element ={<TentangKami/>}/>
+        <Route path = "/produk" element ={<Produk/>}/>
       </Routes>
       <Footer/>
     </Router>

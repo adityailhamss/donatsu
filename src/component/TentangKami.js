@@ -17,7 +17,7 @@ import gmbr6 from '../assets/img/gambartk6.png';
 
 function TentangKami() {
   return (
-    <div className='flex justify-center px-5'>
+    <div className='flex justify-center px-5 bg-[#F6FCFF]'>
         <div className='flex flex-col gap-[80px]'>
             <div>
                 <img className='lg:ml-[30px]' src={tk} alt=''/>
