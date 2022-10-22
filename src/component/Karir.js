@@ -40,7 +40,7 @@ function Karir() {
                         />
                     </label>
                     <label className="block pt-11">
-                        <select class="border w-full lg:w-[642px] h-14 rounded text-[#616364] border-[#DADADA] pl-3 font-sans" id="grid-state">
+                        <select class="border w-full lg:w-[642px] h-14 rounded text-[#616364] border-[#DADADA] pl-3 font-sans  bg-white" id="grid-state">
                         <option>Fulltime</option>
                         <option>option1</option>
                         <option>option2</option>

@@ -26,9 +26,14 @@ function LandingPage() {
     slidesToShow: 1,
     slidesToScroll: 1
   };
+
+  
+  
+  
   return (
     <div className=''>
-      <Slider {...settings}>
+      
+      <Slider {...settings} >
         <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
           <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
             <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Ibu & Anak</h1>
@@ -87,7 +92,7 @@ function LandingPage() {
       </div>
     </div>
     </Slider>
-
+    
     <div className='flex flex-col'>
     <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8'>
         <h1 className='text-3xl lg:text-5xl font-normal text-[#484949]'>100+ Variant Rasa</h1>
