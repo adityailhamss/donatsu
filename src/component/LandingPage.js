@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Order from "./Order";
 import Gambar1 from "../assets/img/Ilustrasi.png";
 import Gambar2 from "../assets/img/keluarga.png";
 import Gambar3 from "../assets/img/sisteur.png";
@@ -24,6 +25,7 @@ function LandingPage() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [showMyModal, setShowMyModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -65,6 +67,10 @@ function LandingPage() {
     slidesToScroll: 1
   };
 
+  const handleOnClose = () => {
+    setShowMyModal(false);
+  };
+
   
   
   
@@ -72,8 +78,8 @@ function LandingPage() {
     <div className=''>
       
       <Slider {...settings} >
-        <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
-          <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
+        <div className='flex flex-col-reverse lg:flex-row bg-bg-1 lg:w-[1440px] lg:h-[560px]'>
+          <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
             <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Ibu & Anak</h1>
             <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
           <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
@@ -87,12 +93,10 @@ function LandingPage() {
             </a>
           </div>
         </div>
-        <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
-          <img src={Gambar1}/>
-        </div>
+        
       </div>
-      <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
-        <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
+      <div className='flex flex-col-reverse lg:flex-row bg-bg-2 lg:w-[1440px] lg:h-[560px]'>
+        <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
           <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Keluarga</h1>
           <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
         <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
@@ -106,12 +110,10 @@ function LandingPage() {
           </a>
         </div>
       </div>
-      <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
-        <img src={Gambar2}/>
-      </div>
+      
     </div>
-    <div className='flex flex-col-reverse lg:flex-row bg-[#F6FCFF]'>
-        <div className='flex flex-col pl-8 lg:pl-44 pt-8 lg:pt-36 gap-6'>
+    <div className='flex flex-col-reverse lg:flex-row bg-bg-3 lg:w-[1440px] lg:h-[560px]'>
+        <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
           <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Sisteur</h1>
           <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
         <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
@@ -125,9 +127,7 @@ function LandingPage() {
           </a>
         </div>
       </div>
-      <div className='pl-8 lg:pl-28 pt-8 lg:pt-12'>
-        <img src={Gambar3}/>
-      </div>
+      
     </div>
     </Slider>
     
@@ -182,7 +182,8 @@ function LandingPage() {
           <div className='flex flex-col gap-8 justify-center lg:justify-start items-center lg:items-start px-10 lg:px-0'>
             <h1 className='text-3xl lg:text-5xl font-normal text-[#484949]  w-auto lg:w-[440px] h-auto lg:h-[116px]'>Donatsu Unggul dari Lainnya</h1>
             <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</p>
-            <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
+            <button onClick={() => setShowMyModal(true)}
+              className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
               <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>BELI DONAT SEKARANG</p>  
             </button>
           </div>
@@ -232,6 +233,10 @@ function LandingPage() {
           </div>
         </form>
       </div>
+      <Order
+        onClose={handleOnClose}
+        visible={showMyModal}
+      />
     </div>
   )
 }

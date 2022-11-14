@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from "../assets/img/Logo.png";
+import mainLogo from "../assets/img/mainLogo.png";
 import Wa from "../assets/img/Whatsapp.png";
 import Menu from "../assets/img/menu.png";
 
@@ -13,7 +13,7 @@ function Navbar() {
     <div className='flex flex-row px-8 lg:px-20 py-6 justify-between items-center gap-14 bg-[#F6FCFF]'>
         <div className='py-6 lg:py-0'>
             <NavLink to={"/"}>
-                <img src={Logo} alt="" />
+                <img className="w-[64px] h-[64px]" src={mainLogo} alt="" />
             </NavLink>
         </div>
         <ul className='hidden lg:flex flex-row gap-14 items-start'>
