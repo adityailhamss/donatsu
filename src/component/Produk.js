@@ -28,7 +28,7 @@ function Produk() {
     <div className='flex justify-center px-5 bg-[#F6FCFF]'>
         <div className='flex flex-col'>
         <div className='flex flex-col gap-[33px]'>
-            <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949]'>100+ Macam Rasa Donat</h1>
+            <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Macam Rasa Donat</h1>
 
             <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
             </div>
@@ -65,7 +65,7 @@ function Produk() {
             </div>
 
             <div className='flex flex-col pt-[100px] gap-[34px]'>
-            <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949]'>Menu Lezat Lainnya</h1>
+            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Menu Lezat Lainnya</h1>
 
             <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
             </div>

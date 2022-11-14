@@ -51,7 +51,7 @@ function Karir() {
                 <img src={Cover} alt=''/>
             </div>
             <div className='flex flex-col justify-center items-center py-20 gap-11'>
-                <h1 className='text-2xl lg:text-5xl font-bold text-[#484949]'>Mulai Karir di Donatsu</h1>
+                <h1 className='text-2xl lg:text-5xl font-bold text-[#484949] font-[PoetsenOne]'>Mulai Karir di Donatsu</h1>
                 <p className='text-xl lg:text-2xl font-normal text-[#484949] w-[330px] lg:w-[440px] h-[72px] text-center'>Gabung kemitraan dan dapat keuntung menarik</p>
                 <form onSubmit={handleSubmit} className="gap-11 pt-3 justify-center items-center">
                     <label className="block gap-4">
@@ -110,7 +110,7 @@ function Karir() {
                 
                     <div className="flex justify-center">
                         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[532px] h-[52px] mt-5'>
-                            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>DAPATKAN PENAWARAN KERJASAMA</p>  
+                            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>DAPATKAN PENAWARAN KERJASAMA</p>  
                         </button>
                     </div>
                 </form>

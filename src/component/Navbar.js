@@ -20,7 +20,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/kemitraan"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -32,7 +32,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/tentangkami"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -44,7 +44,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/produk"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -56,7 +56,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/karir"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -69,7 +69,7 @@ function Navbar() {
           <a href="https://wa.me/6285722159221">  
           <button className='flex-row hidden lg:flex justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
             <img src={Wa}/>
-            <p className='font-normal text-base text-[#FFFFFF]'>HUBUNGI KAMI</p>
+            <p className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI KAMI</p>
         </button>
         </a>     
         <div className="ml-auto my-auto lg:hidden inline-block w-[2rem] relative hover:cursor-pointer">
@@ -83,7 +83,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/kemitraan"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -95,7 +95,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/tentangkami"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -107,7 +107,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/produk"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -119,7 +119,7 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/karir"}
-                    className="py-6 px-6 tracking-widest"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
@@ -131,7 +131,7 @@ function Navbar() {
           </ul>            
         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[150px] lg:w-[200px] h-[48px]'>
             <img src={Wa}/>
-            <p className='font-normal text-base text-[#FFFFFF]'>HUBUNGI KAMI</p>
+            <p className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI KAMI</p>
         </button>
           </div>
         </div>

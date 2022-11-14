@@ -36,7 +36,7 @@ function TentangKami() {
             <div className='flex flex-col gap-[33px]'>
             <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949]'>Manajemen</h1>
 
-            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
+            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364] font-[PoetsenOne]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
             Kami memiliki tujuan yang sama untuk menciptakan dunia yang lebih baik.</p>
             </div>
             <div className='flex flex-col lg:flex-row items-center gap-[60px]'>
@@ -51,7 +51,7 @@ function TentangKami() {
 
             </div>
             <div className='flex flex-col gap-[33px]'>
-            <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949]'>Team</h1>
+            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Team</h1>
 
             <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
             Kami memiliki tujuan yang sama untuk menciptakan dunia yang lebih baik.</p>
