@@ -13,6 +13,8 @@ import produk11 from '../assets/produk/produk11.png';
 import produk12 from '../assets/produk/produk12.png';
 import produk13 from '../assets/produk/produk13.png';
 import productApi from '../config/productApi';
+import { SRLWrapper } from "simple-react-lightbox";
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 function Produk() {
 
@@ -28,10 +30,12 @@ function Produk() {
     <div className='flex justify-center px-5 bg-[#F6FCFF]'>
         <div className='flex flex-col'>
         <div className='flex flex-col gap-[33px]'>
-            <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Macam Rasa Donat</h1>
+            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Macam Rasa Donat</h1>
 
             <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
             </div>
+            
+            <SRLWrapper>
             <div className='grid grid-rows-4 lg:grid-flow-col gap-6'>
                 <div class="row-span-4 col-span-4 lg:w-[628px] lg:h-[472px] rounded-lg img-hover-zoom">
                     <img src={produk1} alt='' />
@@ -49,6 +53,8 @@ function Produk() {
                 <img src={produk5} alt='' />
                 </div>
              </div>
+             </SRLWrapper>
+             
             <div className='flex flex-col items-center lg:flex-row gap-6 pt-6'>
                 <div class="row-span-2 col-span-2 lg:w-[303px] lg:h-[224px] rounded-lg img-hover-zoom">
                 <img src={produk6} alt='' />
@@ -63,6 +69,8 @@ function Produk() {
                 <img src={produk9} alt='' />
                 </div>
             </div>
+            
+            
 
             <div className='flex flex-col pt-[100px] gap-[34px]'>
             <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Menu Lezat Lainnya</h1>

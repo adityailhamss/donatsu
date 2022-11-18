@@ -7,6 +7,7 @@ import Kemitraan from './component/Kemitraan';
 import Karir from './component/Karir';
 import TentangKami from './component/TentangKami';
 import Produk from './component/Produk';
+import Galery from './component/Galery';
 
 
 
@@ -14,14 +15,14 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <Routes>
+       <Routes>
         <Route path = "/" element ={<LandingPage/>}/>
         <Route path = "/kemitraan" element ={<Kemitraan/>}/>
         <Route path = "/karir" element ={<Karir/>}/>
         <Route path = "/tentangkami" element ={<TentangKami/>}/>
         <Route path = "/produk" element ={<Produk/>}/>
       </Routes>
-      <Footer/>
+       <Footer/>
     </Router>
   );
 }
