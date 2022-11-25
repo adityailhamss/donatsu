@@ -14,6 +14,7 @@ import gmbr3 from '../assets/img/gambartk3.png';
 import gmbr4 from '../assets/img/gambartk4.png';
 import gmbr5 from '../assets/img/gambartk5.png';
 import gmbr6 from '../assets/img/gambartk6.png';
+import { SRLWrapper } from "simple-react-lightbox";
 
 function TentangKami() {
   return (
@@ -36,7 +37,7 @@ function TentangKami() {
             <div className='flex flex-col gap-[33px]'>
             <h1 className='font-[PoetsenOne] font-normal text-5xl leading-[58px] text-center text-[#484949]'>Manajemen</h1>
 
-            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364] font-[PoetsenOne]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
+            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
             Kami memiliki tujuan yang sama untuk menciptakan dunia yang lebih baik.</p>
             </div>
             <div className='flex flex-col lg:flex-row items-center gap-[60px]'>
@@ -50,13 +51,14 @@ function TentangKami() {
                 <img className='w-[216px] h-[285px]' src={team5} alt=''/>
 
             </div>
+            
             <div className='flex flex-col gap-[33px]'>
             <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Team</h1>
 
             <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
             Kami memiliki tujuan yang sama untuk menciptakan dunia yang lebih baik.</p>
             </div>
-
+            <SRLWrapper>
             <div className='flex flex-col lg:flex-row gap-[39px] items-center lg:ml-[20px]'>
                 <img src={gmbr1} alt=''/>
                 <img  src={gmbr2} alt=''/>
@@ -67,6 +69,7 @@ function TentangKami() {
                 <img  src={gmbr5} alt=''/>
                 <img  src={gmbr6} alt=''/>
             </div>
+            </SRLWrapper>
         </div>
     </div>
   )

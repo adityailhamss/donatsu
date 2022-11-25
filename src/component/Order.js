@@ -9,15 +9,15 @@ function Order({ visible, onClose}) {
     return (
       <div className="flex flex-col px-20 py-10 w-auto mx-auto items-center fixed inset-0 bg-opacity-30 backdrop-blur-sm">
         <div className="flex flex-col bg-[#ffffff] lg:w-[700px] lg:h-[550px] gap-4 rounded-lg py-4 border-2 px-4">
-          <div className="flex flex-row">
-            <div className="flex lg:pl-56">
-              <div className="felx">
+          <div className="flex flex-row justify-center">
+            <div className="flex">
+              <div className="flex pl-28">
                 <p className="font-bold lg:text-2xl text-[#444444]">
                   Order
                 </p>
               </div>
             </div>
-            <button onClick={onClose} className="flex lg: pl-40 items-center">
+            <button onClick={onClose} className="flex lg:pl-40 items-center">
               <img src={X} alt="" />
             </button>
           </div>

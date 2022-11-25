@@ -81,7 +81,7 @@ function LandingPage() {
         <div className='flex flex-col-reverse lg:flex-row bg-bg-1 lg:w-[1440px] lg:h-[560px]'>
           <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
             <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Ibu & Anak</h1>
-            <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[PoetsenOne]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
+            <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
           <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
             <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
               <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
@@ -97,8 +97,8 @@ function LandingPage() {
       </div>
       <div className='flex flex-col-reverse lg:flex-row bg-bg-2 lg:w-[1440px] lg:h-[560px]'>
         <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
-          <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Keluarga</h1>
-          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
+          <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Keluarga</h1>
+          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
         <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
           <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
             <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>GABUNG KEMITRAAN</p>  
@@ -114,8 +114,8 @@ function LandingPage() {
     </div>
     <div className='flex flex-col-reverse lg:flex-row bg-bg-3 lg:w-[1440px] lg:h-[560px]'>
         <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
-          <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px]'>Donat Susu Untuk Sisteur</h1>
-          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
+          <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Sisteur</h1>
+          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
         <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
           <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
             <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>GABUNG KEMITRAAN</p>  
@@ -134,7 +134,7 @@ function LandingPage() {
     <div className='flex flex-col'>
     <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8'>
         <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>100+ Variant Rasa</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center'>Dari 100 leboh varian rasa. Berikut adalah toping paling disukai</p>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Dari 100 leboh varian rasa. Berikut adalah toping paling disukai</p>
     </div>
     <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
       <div className='w-[256px] h-[386px]'>
@@ -171,7 +171,7 @@ function LandingPage() {
       </div>
       <div className='flex flex-col px-10 lg:px-20 pt-8 lg:pt-44 gap-8 justify-center lg:justify-start items-center lg:items-start'>
         <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] w-auto lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Most Popular Donat in Town</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</p>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</p>
         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
           <img src={Instagram2} alt=""/>
           <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>@Donatsu_official</p>  
@@ -181,7 +181,7 @@ function LandingPage() {
       <div className='flex flex-col lg:flex-row pt-16 lg:pt-56 lg:pb-64'>
           <div className='flex flex-col gap-8 justify-center lg:justify-start items-center lg:items-start px-10 lg:px-0'>
             <h1 className='text-3xl lg:text-5xl font-normal text-[#484949]  w-auto lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donatsu Unggul dari Lainnya</h1>
-            <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px]'>Gabung kemitraan dan dapat keuntungan menarik</p>
+            <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</p>
             <button onClick={() => setShowMyModal(true)}
               className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
               <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>BELI DONAT SEKARANG</p>  
@@ -200,7 +200,7 @@ function LandingPage() {
 
     <div className='flex flex-col justify-center items-center py-20 gap-11'>
         <h1 className='text-2xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>Gabung Kemitraan Donatsu</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center'>Gabung kemitraan dan dapat keuntung menarik</p>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Gabung kemitraan dan dapat keuntung menarik</p>
         <form  onSubmit={handleSubmit} className="gap-11 pt-3 justify-center items-center">
           <label className="block gap-4">
             <input

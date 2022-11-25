@@ -52,7 +52,7 @@ function Karir() {
             </div>
             <div className='flex flex-col justify-center items-center py-20 gap-11'>
                 <h1 className='text-2xl lg:text-5xl font-bold text-[#484949] font-[PoetsenOne]'>Mulai Karir di Donatsu</h1>
-                <p className='text-xl lg:text-2xl font-normal text-[#484949] w-[330px] lg:w-[440px] h-[72px] text-center'>Gabung kemitraan dan dapat keuntung menarik</p>
+                <p className='text-xl lg:text-2xl font-normal text-[#484949] w-[330px] lg:w-[440px] h-[72px] text-center font-[Poppins]'>Gabung kemitraan dan dapat keuntung menarik</p>
                 <form onSubmit={handleSubmit} className="gap-11 pt-3 justify-center items-center">
                     <label className="block gap-4">
                         <input

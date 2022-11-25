@@ -32,7 +32,7 @@ function Produk() {
         <div className='flex flex-col gap-[33px]'>
             <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Macam Rasa Donat</h1>
 
-            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
+            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364] mb-3'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
             </div>
             
             <SRLWrapper>
