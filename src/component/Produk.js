@@ -53,7 +53,7 @@ function Produk() {
                 <img src={produk5} alt='' />
                 </div>
              </div>
-             </SRLWrapper>
+             
              
             <div className='flex flex-col items-center lg:flex-row gap-6 pt-6'>
                 <div class="row-span-2 col-span-2 lg:w-[303px] lg:h-[224px] rounded-lg img-hover-zoom">
@@ -69,6 +69,7 @@ function Produk() {
                 <img src={produk9} alt='' />
                 </div>
             </div>
+            </SRLWrapper>
             
             
 
@@ -77,6 +78,7 @@ function Produk() {
 
             <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
             </div>
+            
             <div className='flex flex-col lg:flex-row gap-6 pt-[67px]'>
               <img className='w-[304px h-[400px] rounded-2xl' src={produk10} alt=''/>
               <img className='w-[304px h-[400px] rounded-2xl'  src={produk11} alt=''/>

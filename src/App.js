@@ -7,7 +7,7 @@ import Kemitraan from './component/Kemitraan';
 import Karir from './component/Karir';
 import TentangKami from './component/TentangKami';
 import Produk from './component/Produk';
-import Galery from './component/Galery';
+
 
 
 
