@@ -7,31 +7,31 @@ import productApi from '../config/productApi';
 
 function Footer() {
 
-    const [error, setError] = useState(null);
-    const [instagram, setInstagrams] = useState([null]);
+    const [ig, setIg] = useState([])
 
-    axios.get('http://localhost:1337/api/instagrams/1').then(data => {
-        const json = data.json();
-        setInstagrams(json);
-  console.log(data);
-});
+    // const getData = () => {
+    //     axios.get('http://localhost:1337/api/instagrams').then(response => response.json()).then((json) => setIg(json));
+    // }
 
 
+    // useEffect(() => {
+    //     getData();
+    // },[])
 
-    
-    
 
-//   useEffect(() => {
-//     axios
-//       .get('http://localhost:1337/api/instagrams/1')
-//       .then(({ data }) => setInstagrams(data))
-//       .catch((error) => setError(error))
-//   }, [])
 
-//   if (error) {
-//     // Print errors if any
-//     return <div>An error occured: {error.message}</div>;
-//   }
+    useEffect(() => {
+        axios
+        .get('http://localhost:1337/api/instagrams')
+        .then((response) => {
+            const json = response.data;
+            console.log(json.data[0].attributes.donatsu);
+            setIg(json);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, []);
 
   return (
     <div className='flex flex-col lg:flex-row justify-between items-center lg:items-start px-20 py-28 gap-8 bg-[#F6FCFF] lg:gap-24'>
@@ -43,18 +43,16 @@ function Footer() {
         <div className='flex flex-col items-start gap-3'>
             <h1 className='font-normal text-sm text-[#484949] font-[Poppins]'>Ikuti kami di social media donatsu</h1>
             <div className='flex flex-col items-start gap-6'>
+                
                 <div className='flex flex-row items-start gap-2'>
                     <img src={Instagram} />
-                    <p className='font-normal text-sm text-[#484949] font-[Poppins]'>@donatsu.official</p>
+                    {ig.data?.map((insta) => (
+                    <a href={insta.attributes.donatsu} className='font-normal text-sm text-[#484949] font-[Poppins]'>
+                         @donatsu.official
+                        </a>
+                   ))}
                 </div>
-                <div className='flex flex-row items-start gap-2'>
-                    <img src={Instagram} />
-                    <p className='font-normal text-sm text-[#484949] font-[Poppins]'>@donatsu.official</p>
-                </div>
-                <div className='flex flex-row items-start gap-2'>
-                    <img src={Instagram} />
-                    <a href="" className='font-normal text-sm text-[#484949] font-[Poppins]'>@donatsu.official</a>
-                </div>
+
             </div>
         </div>
         
