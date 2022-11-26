@@ -25,7 +25,7 @@ function Footer() {
         .get('http://localhost:1337/api/instagrams')
         .then((response) => {
             const json = response.data;
-            console.log(json.data[0].attributes.donatsu);
+            console.log(json);
             setIg(json);
         })
         .catch((error) => {
