@@ -22,7 +22,7 @@ function Footer() {
 
     useEffect(() => {
         axios
-        .get('http://localhost:1337/api/instagrams')
+        .get('https://backenddonatsu.herokuapp.com/api/instagrams/')
         .then((response) => {
             const json = response.data;
             console.log(json);
