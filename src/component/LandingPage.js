@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from 'axios';
 import Order from "./Order";
 import Gambar1 from "../assets/img/Ilustrasi.png";
 import Gambar2 from "../assets/img/keluarga.png";
@@ -20,6 +21,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function LandingPage() {
+
+
+
+  const [ig, setIg] = useState([])
+
+    useEffect(() => {
+        axios
+        .get('https://backenddonatsu.herokuapp.com/api/instagrams/')
+        .then((response) => {
+            const json = response.data;
+            console.log(json);
+            setIg(json);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, []);
 
   const initialValues = { nama: "", email: ""};
   const [formValues, setFormValues] = useState(initialValues);
@@ -151,9 +169,11 @@ function LandingPage() {
       </div>
     </div>
     <div className='flex flex-row items-center justify-center pt-16 pb-24 gap-2 lg:gap-6'>
-        <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
+      <a href="Modul lighting.pdf" download="Modul lighting.pdf">
+        <button  className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
           <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>LIHAT PROPOSAL KEMITRAAN</p>  
         </button>
+        </a>
       </div>
     </div>
 
@@ -174,7 +194,11 @@ function LandingPage() {
         <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</p>
         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
           <img src={Instagram2} alt=""/>
-          <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>@Donatsu_official</p>  
+          {ig.data?.map((insta) => (
+                    <a href={insta.attributes.donatsu} className='font-normal text-sm text-[#ffffff] font-[Poppins]'>
+                         @donatsu.official
+                        </a>
+                   ))} 
         </button>
       </div>
       </div>
