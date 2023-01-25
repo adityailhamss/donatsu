@@ -1,5 +1,4 @@
 
-
 import axios from 'axios';
 import React, { useState, useEffect} from 'react';
 import Instagram from "../assets/img/Instagram.png";
@@ -9,20 +8,9 @@ function Footer() {
 
     const [ig, setIg] = useState([])
 
-    // const getData = () => {
-    //     axios.get('http://localhost:1337/api/instagrams').then(response => response.json()).then((json) => setIg(json));
-    // }
-
-
-    // useEffect(() => {
-    //     getData();
-    // },[])
-
-
-
     useEffect(() => {
         axios
-        .get('https://backenddonatsu.herokuapp.com/api/instagrams/')
+        .get('http://localhost:1337/api/instagrams/')
         .then((response) => {
             const json = response.data;
             console.log(json);

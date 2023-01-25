@@ -22,13 +22,26 @@ import "slick-carousel/slick/slick-theme.css";
 
 function LandingPage() {
 
+  const [wa, setWa] = useState([])
 
+    useEffect(() => {
+        axios
+        .get('http://localhost:1337/api/was/')
+        .then((response) => {
+            const json = response.data;
+            console.log(json);
+            setWa(json);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, []);
 
   const [ig, setIg] = useState([])
 
     useEffect(() => {
         axios
-        .get('https://backenddonatsu.herokuapp.com/api/instagrams/')
+        .get('http://localhost:1337/api/instagrams/')
         .then((response) => {
             const json = response.data;
             console.log(json);
@@ -104,11 +117,13 @@ function LandingPage() {
             <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
               <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
             </button>
-            <a href="https://wa.me/6285722159221">
+            
             <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px] font-[PoetsenOne]'>
-              <p className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</p>  
+            {wa.data?.map((wats) => (
+              <a href={wats.attributes.whatsapp} className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
+              ))}
             </button>
-            </a>
+            
           </div>
         </div>
         
@@ -121,11 +136,13 @@ function LandingPage() {
           <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
             <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>GABUNG KEMITRAAN</p>  
           </button>
-          <a href="https://wa.me/6285722159221">
-          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
-            <p className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</p>  
-          </button>
-          </a>
+          
+          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px] font-[PoetsenOne]'>
+            {wa.data?.map((wats) => (
+              <a href={wats.attributes.whatsapp} className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
+              ))}
+            </button>
+          
         </div>
       </div>
       
@@ -138,11 +155,13 @@ function LandingPage() {
           <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
             <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>GABUNG KEMITRAAN</p>  
           </button>
-          <a href="https://wa.me/6285722159221">
-          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
-            <p className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</p>  
-          </button>
-          </a>
+          
+          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px] font-[PoetsenOne]'>
+            {wa.data?.map((wats) => (
+              <a href={wats.attributes.whatsapp} className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
+              ))}
+            </button>
+          
         </div>
       </div>
       
@@ -222,7 +241,7 @@ function LandingPage() {
       </div>
     </div>
 
-    <div className='flex flex-col justify-center items-center py-20 gap-11'>
+    <div className='flex flex-col justify-center items-center py-20 gap-11' id="kerjasama">
         <h1 className='text-2xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>Gabung Kemitraan Donatsu</h1>
         <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Gabung kemitraan dan dapat keuntung menarik</p>
         <form  onSubmit={handleSubmit} className="gap-11 pt-3 justify-center items-center">

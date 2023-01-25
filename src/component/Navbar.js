@@ -1,14 +1,31 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import mainLogo from "../assets/img/mainLogo.png";
 import Wa from "../assets/img/Whatsapp.png";
 import Menu from "../assets/img/menu.png";
+import axios from 'axios';
 
 function Navbar() {
   const [drop, setDrop] = useState(false);
     const dropDown = () => {
     setDrop(!drop);
   };
+
+  const [wa, setWa] = useState([])
+
+    useEffect(() => {
+        axios
+        .get('http://localhost:1337/api/was/')
+        .then((response) => {
+            const json = response.data;
+            console.log(json);
+            setWa(json);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, []);
+
   return (
     <div className='flex flex-row px-8 lg:px-20 py-6 justify-between items-center gap-14 bg-[#F6FCFF]'>
         <div className='py-6 lg:py-0'>
@@ -65,13 +82,14 @@ function Navbar() {
                       Karir
                 </NavLink>
             </li>
-          </ul>     
-          <a href="https://wa.me/6285722159221">  
-          <button className='flex-row hidden lg:flex justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
+          </ul>
+          <div className='flex-row hidden lg:flex justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
             <img src={Wa}/>
-            <p className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI KAMI</p>
-        </button>
-        </a>     
+            {wa.data?.map((wats) => (
+          <a href={wats.attributes.whatsapp} className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
+          ))}
+        </div>
+        
         <div className="ml-auto my-auto lg:hidden inline-block w-[2rem] relative hover:cursor-pointer">
           <img src={Menu} alt="" onClick={dropDown} />
           <div
