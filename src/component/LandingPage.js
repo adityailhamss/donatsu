@@ -1,6 +1,15 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import Order from "./Order";
+import Elp from "../assets/img/Ellipse 4.png";
+import Elp1 from "../assets/img/Ellipse 5.png";
+import Bintang from "../assets/img/bintang.png";
+import Kreasi from "../assets/img/kreasi.png";
+import Hijau from "../assets/img/hijau.png";
+import Fruity from "../assets/img/fruity.png";
+import Merah from "../assets/img/merah.png";
+import Seasonal from "../assets/img/seasonal.png";
+import Kuning from "../assets/img/kuning.png";
 import Gambar1 from "../assets/img/Ilustrasi.png";
 import Gambar2 from "../assets/img/keluarga.png";
 import Gambar3 from "../assets/img/sisteur.png";
@@ -170,21 +179,86 @@ function LandingPage() {
     
     <div className='flex flex-col'>
     <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8'>
-        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>Menu Donatsu</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[521px] h-[109px] text-center font-[Poppins]'>Sajian menu halal yang lengkap secara rasa, berkualitas baik, dan berpenampilan menarik, hanya untuk Anda.</p>
+        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>100+ Variant Rasa</h1>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Dari 100 leboh varian rasa. Berikut adalah toping paling disukai</p>
     </div>
+    <div className="flex flex-row gap-28 pt-44 pb-40 ">
     <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
-      <div className='w-[256px] h-[386px]'>
-      <img src={Varian}/>
+      <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
+          <div className="flex flex-col">
+            <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Elp1}/>
+            <img className="absolute left-[1.81%] right-[7.81%] top-0 bottom-[44.04%]" src={Elp}/>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[57.25%] bottom-[35.23%]">
+              <p className="font-[PoetsenOne] font-normal text-2xl text-center pt-2 text-[#484949]">MILKY SERIES</p>
+            </div>
+            <div className="flex flex-row justify-center items-center gap-3">
+              <div className="absolute left-[71.09%] right-[13.28%] top-[36.27%] bottom-[53.37%] bg-[#1FB2FC] border-[0px] rounded-xl">
+                <img className = "absolute right-[8.65%] left-[1.64%] top-[1.67%] bottom-[14.35%]" src={Bintang} />
+              </div>
+            </div>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[68.65%] bottom-[6.48%]">
+              <p className="font-[Poppins] font-normal text-base text-center text-[#484949]">Donat susu original dari Donatsu dengan citarasa taburan susu yang pas   </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='w-[256px] h-[386px]'>
-      <img src={Varian1}/>
+      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
+      <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
+          <div className="flex flex-col">
+          <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Kreasi}/>
+            <img className="absolute left-[1.81%] right-[7.81%] top-0 bottom-[44.04%]" src={Elp}/>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[57.25%] bottom-[35.23%]">
+              <p className="font-[PoetsenOne] text-center font-normal pt-2 text-2xl text-[#484949]">KREASI SERIES</p>
+            </div>
+            <div className="flex flex-row justify-center items-center gap-3">
+              <div className="absolute left-[71.09%] right-[13.28%] top-[36.27%] bottom-[53.37%] bg-[#76D816] border-[0px] rounded-xl">
+                <img className = "absolute right-[8.65%] left-[1.64%] top-[1.67%] bottom-[14.35%]" src={Hijau} />
+              </div>
+            </div>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[68.65%] bottom-[6.48%]">
+              <p className="font-[Poppins] font-normal text-base text-center text-[#484949]">Pilih toping dan glaze donat pilihan Anda, ekspresikan kreasi Ibu dan Ananda</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='w-[256px] h-[386px]'>
-      <img src={Varian2}/>
+      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
+      <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
+          <div className="flex flex-col">
+          <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Fruity}/>
+            <img className="absolute left-[1.81%] right-[7.81%] top-0 bottom-[44.04%]" src={Elp}/>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[57.25%] bottom-[35.23%]">
+              <p className="font-[PoetsenOne] font-normal text-center pt-2 text-2xl text-[#484949]">FRUITY SERIES</p>
+            </div>
+            <div className="flex flex-row justify-center items-center gap-3">
+              <div className="absolute left-[71.09%] right-[13.28%] top-[36.27%] bottom-[53.37%] bg-[#C42A6E] border-[0px] rounded-xl">
+                <img className = "absolute right-[8.65%] left-[1.64%] top-[1.67%] bottom-[14.35%]" src={Merah} />
+              </div>
+            </div>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[68.65%] bottom-[6.48%]">
+              <p className="font-[Poppins] font-normal text-base text-center text-[#484949]">Cream lembut dan toping buah fresh diatas donat susu yang menyegarkan</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='w-[256px] h-[386px]'>
-      <img src={Varian3}/>
+      
+      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
+      <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
+          <div className="flex flex-col">
+          <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Seasonal}/>
+            <img className="absolute left-[1.81%] right-[7.81%] top-0 bottom-[44.04%]" src={Elp}/>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[57.25%] bottom-[35.23%]">
+              <p className="font-[PoetsenOne] font-normal text-center pt-2 text-2xl text-[#484949]">SEASONAL SERIES</p>
+            </div>
+            <div className="flex flex-row justify-center items-center gap-3">
+              <div className="absolute left-[71.09%] right-[13.28%] top-[36.27%] bottom-[53.37%] bg-[#FCA909] border-[0px] rounded-xl">
+                <img className = "absolute right-[8.65%] left-[1.64%] top-[1.67%] bottom-[14.35%]" src={Kuning} />
+              </div>
+            </div>
+            <div className="absolute left-[10.94%] right-[10.94%] top-[68.65%] bottom-[6.48%]">
+              <p className="font-[Poppins] font-normal text-base text-center text-[#484949]">Produk-produk Donatsu yang dirilis secara musiman, berkala dan penuh kejutan </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div className='flex flex-row items-center justify-center pt-16 pb-24 gap-2 lg:gap-6'>
