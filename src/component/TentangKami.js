@@ -18,7 +18,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 function TentangKami() {
   return (
-    <div className='flex justify-center px-5 bg-[#F6FCFF]'>
+    <div className='flex justify-center px-5 bg-[#F6FCFF] pb-[165px]'>
         <div className='flex flex-col gap-[80px]'>
             <div>
                 <img className='lg:ml-[30px]' src={tk} alt=''/>
@@ -53,10 +53,9 @@ function TentangKami() {
             </div>
             
             <div className='flex flex-col gap-[33px]'>
-            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Team</h1>
+            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Manajemen</h1>
 
-            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam.<br/>
-            Kami memiliki tujuan yang sama untuk menciptakan dunia yang lebih baik.</p>
+            <p className='font-[Poppins] font-normal text-base text-center text-[#616364] w-[1200px] h-[106px] pl-[100px]'>Manajemen Donatsu terdiri dari anggota dengan latar belakang dan pengalaman yang beragam, namun memiliki visi yang sama untuk menjadi perusahaan food & beverage yang sesuai dengan syariat Islam, perusahaan yang bermanfaat dengan mengutamakan pelayanan, kualitas produk dan harga yang terjangkau bagi seluruh lapisan masyarakat Indonesia</p>
             </div>
             <SRLWrapper>
             <div className='flex flex-col lg:flex-row gap-[39px] items-center lg:ml-[20px]'>

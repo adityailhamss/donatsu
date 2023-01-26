@@ -1,13 +1,13 @@
 import React, { useState, useEffect} from 'react';
-import produk1 from '../assets/produk/produk1.png';
-import produk2 from '../assets/produk/produk2.png';
-import produk3 from '../assets/produk/produk3.png';
-import produk4 from '../assets/produk/produk4.png';
-import produk5 from '../assets/produk/produk5.png';
-import produk6 from '../assets/produk/produk6.png';
-import produk7 from '../assets/produk/produk7.png';
-import produk8 from '../assets/produk/produk8.png';
-import produk9 from '../assets/produk/produk9.png';
+import produk1 from '../assets/produk/Rectangle 13.png';
+import produk2 from '../assets/produk/Rectangle 26.png';
+import produk3 from '../assets/produk/Rectangle 21.png';
+import produk4 from '../assets/produk/Rectangle 17.png';
+import produk5 from '../assets/produk/Rectangle 19.png';
+import produk6 from '../assets/produk/Rectangle 18.png';
+import produk7 from '../assets/produk/Rectangle 15.png';
+import produk8 from '../assets/produk/Rectangle 20.png';
+import produk9 from '../assets/produk/Rectangle 16.png';
 import produk10 from '../assets/produk/produk10.png';
 import produk11 from '../assets/produk/produk11.png';
 import produk12 from '../assets/produk/produk12.png';
@@ -27,12 +27,12 @@ function Produk() {
   }, []);
 
   return (
-    <div className='flex justify-center px-5 bg-[#F6FCFF]'>
+    <div className='flex justify-center px-5 bg-[#F6FCFF] pb-[183px]'>
         <div className='flex flex-col'>
         <div className='flex flex-col gap-[33px]'>
-            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Macam Rasa Donat</h1>
+            <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Varian Rasa</h1>
 
-            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364] mb-3'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
+            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364] mb-3 w-[557px] h-[108px] ml-[370px]'>Bebas pilih 100+ paduan toping dan glaze di atas donat pilihan Anda, ekspresikan kreasi Ibu dan Ananda!</p>
             </div>
             
             <SRLWrapper>
@@ -76,7 +76,7 @@ function Produk() {
             <div className='flex flex-col pt-[100px] gap-[34px]'>
             <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>Menu Lezat Lainnya</h1>
 
-            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Gabung kemitraan dan dapat<br/> keuntung menarik</p>
+            <p className='font-[Poppins] font-normal text-base leading-[24px] text-center text-[#616364]'>Inovasi produk-produk pelengkap <br/> pendukung menu utama di Donatsu</p>
             </div>
             
             <div className='flex flex-col lg:flex-row gap-6 pt-[67px]'>

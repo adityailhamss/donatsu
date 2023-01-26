@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import Cover from "../assets/img/cover.png";
+import "../component/photo.css";
+import elips from "../assets/img/Ellipse 4.png"
+import elips2 from "../assets/img/Ellipse 5.png"
+import team1 from "../assets/img/Photo.png"
 
 
 
@@ -45,19 +49,21 @@ function Karir() {
   };
 
   return (
-    <div className='flex justify-center px-5'>
+    
+    <div className='flex justify-center px-5 pb-[200px]'>
         <div className='flex flex-col'>
             <div>
                 <img src={Cover} alt=''/>
             </div>
             <div className='flex flex-col justify-center items-center py-20 gap-11'>
-                <h1 className='text-2xl lg:text-5xl font-bold text-[#484949] font-[PoetsenOne]'>Mulai Karir di Donatsu</h1>
-                <p className='text-xl lg:text-2xl font-normal text-[#484949] w-[330px] lg:w-[440px] h-[72px] text-center font-[Poppins]'>Gabung kemitraan dan dapat keuntung menarik</p>
+                <h1 className='text-2xl lg:text-5xl font-bold text-[#484949] font-[PoetsenOne]'>Berkarir di Donatsu</h1>
+                <p className='text-xl lg:text-2xl font-normal text-[#484949] w-[330px] lg:w-[440px] h-[72px] text-center font-[Poppins]'>Anda memiliki visi yang sama? 
+Raih kesempatan berkarir di Donatsu</p>
                 <form onSubmit={handleSubmit} className="gap-11 pt-3 justify-center items-center">
                     <label className="block gap-4">
                         <input
                             className="border w-[330px] lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-                            placeholder="Isi Nama disini"
+                            placeholder="Nama Anda"
                             type="text"
                             name="nama"
                             id='nama'
@@ -69,7 +75,7 @@ function Karir() {
                     <label className="block pt-11">
                         <input
                         className="border w-full lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-                        placeholder="Isi Email"
+                        placeholder="Email Anda"
                         type="text"
                         name="email"
                         id='email'
@@ -81,7 +87,7 @@ function Karir() {
                     <label className="block pt-11">
                         <input
                         className="border w-full lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-                        placeholder="No Handphone"
+                        placeholder="Nomor Whatsapp Anda"
                         type="number"
                         name="tlpn"
                         id='tlpn'
@@ -110,13 +116,23 @@ function Karir() {
                 
                     <div className="flex justify-center">
                         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[532px] h-[52px] mt-5'>
-                            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>DAPATKAN PENAWARAN KERJASAMA</p>  
+                            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>KIRIM LAMARAN</p>  
                         </button>
                     </div>
                 </form>
             </div>
         </div>
+        <div className="team">
+        <div className="photo"> 
+          <div className="overlap-group"> 
+            <img className="ellipse-4" src={elips} alt="Ellipse 4" /> 
+              <img className="ellipse-5" src={elips2} alt="Ellipse 5" /> 
+              <img className="photo-1" src={team1} alt="Photo" /> 
+            </div>
+          </div>
+        </div> 
     </div>
+    
   )
 }
 

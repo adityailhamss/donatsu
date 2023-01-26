@@ -43,7 +43,7 @@ function Navbar() {
                       })}
                       end
                     >
-                      Kemitraan
+                     Begabung Kemitraan
                 </NavLink>
             </li>
             <li className='py-6'>
@@ -55,7 +55,7 @@ function Navbar() {
                       })}
                       end
                     >
-                      Tentang Kami
+                      Tentang Donatsu
                 </NavLink>
             </li>
             <li className='py-6'>
@@ -67,7 +67,7 @@ function Navbar() {
                       })}
                       end
                     >
-                      100+ Produk
+                      100+ Varian Rasa
                 </NavLink>
             </li>
             <li className='py-6'>
@@ -79,14 +79,14 @@ function Navbar() {
                       })}
                       end
                     >
-                      Karir
+                     Donatsu Karir
                 </NavLink>
             </li>
           </ul>
           <div className='flex-row hidden lg:flex justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[200px] h-[48px]'>
             <img src={Wa}/>
             {wa.data?.map((wats) => (
-          <a href={wats.attributes.whatsapp} className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
+          <a href={wats.attributes.whatsapp} className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI DONATSU</a>  
           ))}
         </div>
         
@@ -101,55 +101,55 @@ function Navbar() {
             <li className='py-6'>
                 <NavLink
                     to={"/kemitraan"}
-                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne] text-xs"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
-                      Kemitraan
+                     Bergabung Kemitraan
                 </NavLink>
             </li>
             <li className='py-6'>
                 <NavLink
                     to={"/tentangkami"}
-                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne] text-xs"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
-                      Tentang Kami
+                      Tentang Donatsu
                 </NavLink>
             </li>
             <li className='py-6'>
                 <NavLink
                     to={"/produk"}
-                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne] text-xs"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
-                      100+ Produk
+                      100+ Varian Rasa
                 </NavLink>
             </li>
             <li className='py-6'>
                 <NavLink
                     to={"/karir"}
-                    className="py-6 px-6 tracking-widest font-[PoetsenOne]"
+                    className="py-6 px-6 tracking-widest font-[PoetsenOne] text-xs"
                     style={(isActive) => ({
                         color: isActive.isActive ? "#1FB2FC" : "#878889",
                       })}
                       end
                     >
-                      Karir
+                     Donatsu Karir
                 </NavLink>
             </li>
           </ul>            
         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[150px] lg:w-[200px] h-[48px]'>
             <img src={Wa}/>
-            <p className='font-normal text-base text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI KAMI</p>
+            <p className='font-normal text-xs text-[#FFFFFF] font-[PoetsenOne]'>HUBUNGI DONATSU</p>
         </button>
           </div>
         </div>

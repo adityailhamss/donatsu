@@ -53,7 +53,7 @@ function Kemitraan() {
                     <label className="block gap-4">
                         <input
                             className="border w-[330px] lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-                            placeholder="Isi Nama disini"
+                            placeholder="Nama Anda"
                             type="text"
                             name="nama"
                             id='nama'
@@ -65,7 +65,7 @@ function Kemitraan() {
                     <label className="block pt-11">
                         <input
                         className="border w-full lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-                        placeholder="Isi Email"
+                        placeholder="Nomor Whatsapp Anda"
                         type="text"
                         name="email"
                         id='email'
@@ -76,7 +76,7 @@ function Kemitraan() {
                     </label>
                 <div className="flex justify-center">
                     <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[532px] h-[52px] mt-5'>
-                        <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>DAPATKAN PENAWARAN KERJASAMA</p>  
+                        <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>DAPATKAN DETAIL INVESTASI</p>  
                     </button>
                 </div>
                 

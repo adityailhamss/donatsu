@@ -170,8 +170,8 @@ function LandingPage() {
     
     <div className='flex flex-col'>
     <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8'>
-        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>100+ Variant Rasa</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Dari 100 leboh varian rasa. Berikut adalah toping paling disukai</p>
+        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>Menu Donatsu</h1>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[521px] h-[109px] text-center font-[Poppins]'>Sajian menu halal yang lengkap secara rasa, berkualitas baik, dan berpenampilan menarik, hanya untuk Anda.</p>
     </div>
     <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
       <div className='w-[256px] h-[386px]'>
@@ -190,14 +190,14 @@ function LandingPage() {
     <div className='flex flex-row items-center justify-center pt-16 pb-24 gap-2 lg:gap-6'>
       <a href="Modul lighting.pdf" download="Modul lighting.pdf">
         <button  className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
-          <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>LIHAT PROPOSAL KEMITRAAN</p>  
+          <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>KLIK MENU DONATSU</p>  
         </button>
         </a>
       </div>
     </div>
 
     
-    <div className='flex flex-col lg:pl-44 bg-[#F6FCFF] '>
+    <div className='flex flex-col lg:pl-44 bg-[#D5F1FF] '>
     <div className='flex flex-col lg:flex-row gap-5 justify-center lg:justify-start items-center lg:items-start'>
       <div className='lg:pt-56'>
         <img src={IS2}/>
@@ -209,8 +209,9 @@ function LandingPage() {
         <img src={IS3}/>
       </div>
       <div className='flex flex-col px-10 lg:px-20 pt-8 lg:pt-44 gap-8 justify-center lg:justify-start items-center lg:items-start'>
-        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] w-auto lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Most Popular Donat in Town</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</p>
+        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] w-auto lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Cara Baru Nikmati
+Donat Susu</h1>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] font-[Poppins]'>Tambah kenangan indah, nikmati donat susu bersama Donatsu</p>
         <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
           <img src={Instagram2} alt=""/>
           {ig.data?.map((insta) => (
@@ -223,11 +224,15 @@ function LandingPage() {
       </div>
       <div className='flex flex-col lg:flex-row pt-16 lg:pt-56 lg:pb-64'>
           <div className='flex flex-col gap-8 justify-center lg:justify-start items-center lg:items-start px-10 lg:px-0'>
-            <h1 className='text-3xl lg:text-5xl font-normal text-[#484949]  w-auto lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donatsu Unggul dari Lainnya</h1>
-            <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</p>
-            <button onClick={() => setShowMyModal(true)}
+          <button onClick={() => setShowMyModal(true)}
               className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
               <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>BELI DONAT SEKARANG</p>  
+            </button>
+            <h1 className='text-3xl lg:text-5xl font-normal text-[#484949]  w-auto lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donatsu Unggul dari Lainnya</h1>
+            <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[180px] font-[Poppins]'>Positioning yang jelas, jaminan kehalalan & kualitas produk, hingga tampilan yang menarik. Menjadikan Donatsu bisinis dengan potensi growth & income yang besar</p>
+            <button onClick={() => setShowMyModal(true)}
+              className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[360px] h-[52px]'>
+              <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>KLIK PROPOSAL BISNIS</p>  
             </button>
           </div>
           <div className='flex flex-col justify-center items-center gap-2 lg:pl-28 pt-10 lg:pt-0'>
@@ -243,12 +248,13 @@ function LandingPage() {
 
     <div className='flex flex-col justify-center items-center py-20 gap-11' id="kerjasama">
         <h1 className='text-2xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>Gabung Kemitraan Donatsu</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Gabung kemitraan dan dapat keuntung menarik</p>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Jadilah pemilik outlet Donatsu,
+Nikmati passive incomenya</p>
         <form  onSubmit={handleSubmit} className="gap-11 pt-3 justify-center items-center">
           <label className="block gap-4">
             <input
               className="border w-[330px] lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-              placeholder="Isi Nama disini"
+              placeholder="Nama Anda"
               type="text"
               name="nama"
               id='nama'
@@ -260,7 +266,7 @@ function LandingPage() {
           <label className="block pt-11">
             <input
               className="border w-full lg:w-[642px] h-14 rounded border-[#DADADA] pl-3 font-sans"
-              placeholder="Isi Email"
+              placeholder="Nomer Whatsapp Anda"
               type="text"
               name="email"
               id='email'
@@ -271,7 +277,7 @@ function LandingPage() {
           </label>
           <div className="flex justify-center">
               <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[300px] lg:w-[532px] h-[52px] mt-5'>
-                <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>DAPATKAN PENAWARAN KERJASAMA</p>  
+                <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>DAPATKAN DETAIL INVESTASI</p>  
             </button>
           </div>
         </form>
