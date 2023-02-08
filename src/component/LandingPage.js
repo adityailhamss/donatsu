@@ -182,7 +182,7 @@ function LandingPage() {
         <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>100+ Variant Rasa</h1>
         <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Dari 100 leboh varian rasa. Berikut adalah toping paling disukai</p>
     </div>
-    <div className="flex flex-row gap-28 pt-44 pb-40 ">
+    <div className="flex flex-col lg:flex-row gap-28 pt-2 lg:pt-44 pb-[350px] lg:pb-40 ">
     <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
       <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
           <div className="flex flex-col">
@@ -202,7 +202,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
+      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-[300px] lg:pt-9 gap-8'>
       <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
           <div className="flex flex-col">
           <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Kreasi}/>
@@ -221,7 +221,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
+      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-[300px] lg:pt-9 gap-8'>
       <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
           <div className="flex flex-col">
           <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Fruity}/>
@@ -241,7 +241,7 @@ function LandingPage() {
         </div>
       </div>
       
-      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
+      <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-[300px] lg:pt-9 gap-8'>
       <div className="rounded-2xl absolute w-[256px] h-[386px] bg-gradient-to-t from-[#E9F7FF] to-white ">
           <div className="flex flex-col">
           <img className="absolute left-[12%] right-[15.58%] top-[6.48%] bottom-[50.52%]" src={Seasonal}/>

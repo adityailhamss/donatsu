@@ -50,7 +50,7 @@ function Karir() {
 
   return (
     
-    <div className='flex justify-center px-5 pb-[200px]'>
+    <div className='flex justify-center px-5 pt-4 pb-[200px]'>
         <div className='flex flex-col'>
             <div>
                 <img src={Cover} alt=''/>
@@ -122,7 +122,7 @@ Raih kesempatan berkarir di Donatsu</p>
                 </form>
             </div>
         </div>
-        <div className="team">
+        {/* <div className="team">
         <div className="photo"> 
           <div className="overlap-group"> 
             <img className="ellipse-4" src={elips} alt="Ellipse 4" /> 
@@ -130,7 +130,7 @@ Raih kesempatan berkarir di Donatsu</p>
               <img className="photo-1" src={team1} alt="Photo" /> 
             </div>
           </div>
-        </div> 
+        </div>  */}
     </div>
     
   )

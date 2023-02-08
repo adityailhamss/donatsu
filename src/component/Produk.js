@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import produk1 from '../assets/produk/Rectangle 13.png';
+import produk1 from '../assets/produk/Frame 12.png';
 import produk2 from '../assets/produk/Rectangle 26.png';
 import produk3 from '../assets/produk/Rectangle 21.png';
 import produk4 from '../assets/produk/Rectangle 17.png';
@@ -27,7 +27,7 @@ function Produk() {
   }, []);
 
   return (
-    <div className='flex justify-center px-5 bg-[#F6FCFF] pb-[183px]'>
+    <div className='flex justify-center px-5 pt-16 bg-[#F6FCFF] pb-[183px]'>
         <div className='flex flex-col'>
         <div className='flex flex-col gap-[33px]'>
             <h1 className='font-normal text-5xl leading-[58px] text-center text-[#484949] font-[PoetsenOne]'>100+ Varian Rasa</h1>

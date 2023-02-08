@@ -27,7 +27,7 @@ function Navbar() {
     }, []);
 
   return (
-    <div className='flex flex-row px-8 lg:px-20 py-6 justify-between items-center gap-14 bg-[#F6FCFF]'>
+    <div className='flex flex-row px-8 lg:px-20 py-6 justify-between items-center gap-14 bg-[#D5F1FF]'>
         <div className='py-6 lg:py-0'>
             <NavLink to={"/"}>
                 <img className="w-[64px] h-[64px]" src={mainLogo} alt="" />
