@@ -118,7 +118,7 @@ function LandingPage() {
     <div className=''>
       
       <Slider {...settings} >
-        <div className='flex flex-col-reverse lg:flex-row bg-bg-1 lg:w-[1440px] lg:h-[560px]'>
+        <div className='flex flex-col-reverse lg:flex-row bg-bg-1 lg:w-[1440px] lg:h-[530px]'>
           <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
             <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Ibu & Anak</h1>
             <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
@@ -137,7 +137,7 @@ function LandingPage() {
         </div>
         
       </div>
-      <div className='flex flex-col-reverse lg:flex-row bg-bg-2 lg:w-[1440px] lg:h-[560px]'>
+      <div className='flex flex-col-reverse lg:flex-row bg-bg-2 lg:w-[1440px] lg:h-[530px]'>
         <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
           <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Keluarga</h1>
           <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
@@ -156,7 +156,7 @@ function LandingPage() {
       </div>
       
     </div>
-    <div className='flex flex-col-reverse lg:flex-row bg-bg-3 lg:w-[1440px] lg:h-[560px]'>
+    <div className='flex flex-col-reverse lg:flex-row bg-bg-3 lg:w-[1440px] lg:h-[530px]'>
         <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
           <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Sisteur</h1>
           <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
