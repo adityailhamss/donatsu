@@ -79,28 +79,28 @@ function TentangKami() {
               BASYTYAN K PRATAMA
             </p>
             <div>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-6">
                 ● 2010 - Now
               </p>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 Founder BAS-IT Studio (Software House), InvesProperti.id,
                 Technopreneur Startup, Enthusiast (backed up by VC & Angel
                 Investors)
               </p>
             </div>
             <div>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 ● 2010 - 2012
               </p>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 Franchise 2 Brand F&B
               </p>
             </div>
             <div>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 ● 2015 - Now
               </p>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5 pb-7">
                 Investor & Owner (Real estate, F&B, Fashion & Skin Care)
               </p>
             </div>
@@ -116,26 +116,27 @@ function TentangKami() {
             </div>
             <p className="font-bold">C.O.O</p>
           </div>
-          <div className="flex flex-col lg:w-[387px] lg:h-[302px] justify-center w-screen lg:items-start gap-2">
+          <div className="flex flex-col lg:w-[387px] lg:h-[302px]  w-screen lg:items-start gap-2">
             <p className="text-lg font-semibold text-center pl-5 pr-5">
               AAN KURNIAWAN
             </p>
             <div>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 ● 2010 - 2019
               </p>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 Business Owner Bakso Malang, Cuanki Bandung, Siomay Mayo Ardjuna
               </p>
             </div>
             <div>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 ● 2010 - Now
               </p>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 F&B Maklon Industry
               </p>
             </div>
+            
           </div>
         </div>
 
@@ -155,26 +156,26 @@ function TentangKami() {
               AGIS M RAMDANI
             </p>
             <div>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 ● 2013 - Now
               </p>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 Founder 8 Brand Business F&B Owner dari 5 Business F&B
               </p>
             </div>
             <div>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 ● 2016 - Now
               </p>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 Business Development & R&D Consultant
               </p>
             </div>
             <div>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 ● 2018 - Now
               </p>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5 pb-7">
                 Business Development & R&D Consultant
               </p>
             </div>
@@ -195,18 +196,18 @@ function TentangKami() {
               ALI AL JUFRI
             </p>
             <div>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 ● 2011 - 2017
               </p>
-              <p className="text-lg font-semibold text-justify lg:text-start pl-5 pr-5">
+              <p className="text-lg font-semibold text-justify lg:text-start pl-10 pr-5">
                 Business Owner Fashion & Accessories
               </p>
             </div>
             <div>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 ● 2011 - Now
               </p>
-              <p className="text-lg font-semibold  text-justify pl-5 pr-5">
+              <p className="text-lg font-semibold  text-justify pl-10 pr-5">
                 Distributor Nasional Brand Cookies terbesar di Indonesia
               </p>
             </div>
