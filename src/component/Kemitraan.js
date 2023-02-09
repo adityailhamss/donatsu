@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
-import Slider from "../assets/img/slider.png";
+import Slider from "react-slick";
+import img from "../assets/img/1kemitraan.png";
+import img1 from "../assets/img/2kemitraan.png";
+import img2 from "../assets/img/3kemitraan.png";
+import img3 from "../assets/img/4kemitraan.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function Kemitraan() {
 
@@ -39,13 +46,72 @@ function Kemitraan() {
       
       return errors;
     };
+    var settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
 
   return (
     <div className='flex justify-center px-5'>
-        <div className='flex flex-col'>
-            <div>
-                <img src={Slider} alt=''/>
-            </div>
+        <div className='flex flex-col pt-24 '>
+        <div className="w-[400px] lg:w-[1200px] gap-[100px] lg:mx-auto pt-50 lg:pl-0 pl-10 justify-center">
+        <Slider {...settings}>
+          <div className="gap-20">
+            <img src={img}/>
+          </div>
+          <div>
+            <img src={img1}/>
+          </div>
+          <div>
+            <img src={img2}/>
+          </div>
+          <div>
+            <img src={img3}/>
+          </div>
+          <div>
+            <img src={img}/>
+          </div>
+          <div>
+            <img src={img1}/>
+          </div>
+          <div>
+            <img src={img2}/>
+          </div>
+          <div>
+            <img src={img3}/>
+          </div>
+        </Slider>
+      </div>
             <div className='flex flex-col justify-center items-center py-20 gap-11'>
                 <h1 className='text-2xl lg:text-5xl font-bold text-[#484949] font-[PoetsenOne]'>Gabung Kemitraan Donatsu</h1>
                 <p className='text-xl lg:text-2xl font-normal text-[#484949] w-[330px] lg:w-[440px] h-[72px] text-center font-[Poppins]'>Gabung kemitraan dan dapat keuntung menarik</p>
