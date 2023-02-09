@@ -10,9 +10,9 @@ import Fruity from "../assets/img/fruity.png";
 import Merah from "../assets/img/merah.png";
 import Seasonal from "../assets/img/seasonal.png";
 import Kuning from "../assets/img/kuning.png";
-import Gambar1 from "../assets/img/Ilustrasi.png";
-import Gambar2 from "../assets/img/keluarga.png";
-import Gambar3 from "../assets/img/sisteur.png";
+import anak from "../assets/img/Ilusttrasi.png";
+import anak1 from "../assets/img/anak1.png";
+import anak2 from "../assets/img/anak2.png";
 import Varian from "../assets/img/Varian.png";
 import Varian1 from "../assets/img/Varian1.png";
 import Varian2 from "../assets/img/Varian2.png";
@@ -118,69 +118,49 @@ function LandingPage() {
     <div className=''>
       
       <Slider {...settings} >
-        <div className='flex flex-col-reverse lg:flex-row bg-bg-1 lg:w-[1440px] lg:h-[530px]'>
-          <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
+        <div className='flex flex-col lg:flex-row bg-bg-4 w-[536px] lg:w-[1440px] lg:h-[530px]'>
+          <div className="flex flex-col-reverse lg:flex-row items-center w-full lg:ml-20 xl:w-[90%] mx-auto gap-5">
+          <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center lg:pt-36 gap-6'>
             <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Ibu & Anak</h1>
-            <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
-          <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
-            <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
-              <p className='text-sm lg:text-lg font-normal text-[#FFFFFF]'>GABUNG KEMITRAAN</p>  
-            </button>
-            
-            <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px] font-[PoetsenOne]'>
-            {wa.data?.map((wats) => (
-              <a href={wats.attributes.whatsapp} className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
-              ))}
-            </button>
-            
-          </div>
+            <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Investasi Syar’i Mulai 6 Juta,<br></br>
+Outlet Milik Anda Selamanya!</h2>
+        </div>
+        <div className="lg:w-[566px] w-[333x] h-[253px]lg:h-[507px] ">
+          <img  src={anak1} />
+        </div>
         </div>
         
       </div>
-      <div className='flex flex-col-reverse lg:flex-row bg-bg-2 lg:w-[1440px] lg:h-[530px]'>
-        <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
+      <div className='flex flex-col lg:flex-row bg-bg-4 w-[536px] lg:w-[1440px] lg:h-[530px]'>
+          <div className="flex flex-col-reverse lg:flex-row items-center w-full lg:ml-20 xl:w-[90%] mx-auto gap-5">
+          <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center lg:pt-36 gap-6'>
           <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Keluarga</h1>
-          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
-        <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
-          <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
-            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>GABUNG KEMITRAAN</p>  
-          </button>
-          
-          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px] font-[PoetsenOne]'>
-            {wa.data?.map((wats) => (
-              <a href={wats.attributes.whatsapp} className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
-              ))}
-            </button>
-          
-        </div>
+          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Investasi Syar’i Mulai <b>6 Juta</b>,<br></br>
+Nikmati <b>Passive</b> Incomenya!</h2>
       </div>
-      
+      <div className="lg:w-[566px] w-[333x] h-[253px]lg:h-[507px] ">
+          <img  src={anak2} />
+        </div>
+        </div>
     </div>
-    <div className='flex flex-col-reverse lg:flex-row bg-bg-3 lg:w-[1440px] lg:h-[530px]'>
-        <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center pt-8 lg:pt-36 gap-6'>
+    <div className='flex flex-col lg:flex-row bg-bg-4 w-[536px] lg:w-[1440px] lg:h-[530px]'>
+          <div className="flex flex-col-reverse lg:flex-row items-center w-full lg:ml-20 xl:w-[90%] mx-auto gap-5">
+          <div className='flex flex-col pl-8 lg:pl-44 lg:text-left text-center lg:items-start items-center lg:pt-36 gap-6'>
           <h1 className='text-4xl lg:text-5xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-auto lg:h-[116px] font-[PoetsenOne]'>Donat Susu Untuk Sisteur</h1>
-          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Gabung kemitraan dan dapat keuntungan menarik</h2>
-        <div className='flex flex-row pr-4 items-start gap-2 lg:gap-6'>
-          <button className='flex flex-row justify-center items-center gap-2 bg-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px]'>
-            <p className='text-sm lg:text-lg font-normal text-[#FFFFFF] font-[PoetsenOne]'>GABUNG KEMITRAAN</p>  
-          </button>
-          
-          <button className='flex flex-row justify-center items-center gap-2 border-[#1FB2FC] border rounded-2xl w-[160px] lg:w-[240px] h-[52px] font-[PoetsenOne]'>
-            {wa.data?.map((wats) => (
-              <a href={wats.attributes.whatsapp} className='text-sm lg:text-lg font-normal text-[#1FB2FC] font-[PoetsenOne]'>HUBUNGI KAMI</a>  
-              ))}
-            </button>
-          
-        </div>
+          <h2 className='text-xl lg:text-2xl font-normal text-[#484949] w-[300px] lg:w-[440px] h-[72px] font-[Poppins]'>Investasi Syar’i Mulai <b>6 Juta</b>,<br></br>
+<b>Miliki</b> Outlet Selamanya!</h2>
       </div>
-      
+      <div className="lg:w-[566px] w-[333x] h-[253px]lg:h-[507px] ">
+          <img  src={anak} />
+        </div>
+        </div>
     </div>
     </Slider>
     
     <div className='flex flex-col'>
-    <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8'>
-        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>100+ Variant Rasa</h1>
-        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[440px] h-[72px] text-center font-[Poppins]'>Dari 100 leboh varian rasa. Berikut adalah toping paling disukai</p>
+    <div className='flex flex-col justify-center items-center pt-20 lg:pt-36 gap-8 '>
+        <h1 className='text-3xl lg:text-5xl font-normal text-[#484949] font-[PoetsenOne]'>Menu Donatsu</h1>
+        <p className='text-xl lg:text-2xl font-normal text-[#484949] w-auto lg:w-[521px] h-[109px] text-center font-[Poppins]'>Sajian menu halal yang lengkap secara rasa, berkualitas baik, dan berpenampilan menarik, hanya untuk Anda.</p>
     </div>
     <div className="flex flex-col lg:flex-row gap-28 pt-2 lg:pt-44 pb-[350px] lg:pb-40 ">
     <div className='flex flex-col items-center lg:flex-row pl-4 lg:pl-44 pt-9 gap-8'>
